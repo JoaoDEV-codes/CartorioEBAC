@@ -152,7 +152,8 @@ int main()
         printf("Escolha a opção desejada no menu\n\n");
         printf("\t1 - Resgistrar nomes\n");
         printf("\t2 - Consultar nomes\n");
-        printf("\t3 - Deletar nomes\n\n");
+        printf("\t3 - Deletar nomes\n");
+        printf("\t4 - Sair do sistema\n\n");
         printf("Opção: ");  // Fim do menu
         
         scanf("%d", &opcao);  //Armazenando a escolha do usuário
@@ -173,7 +174,13 @@ int main()
         	case 3:
         	Deletar();       //chamada de função
         	break;
-        		
+        	
+        	case 4:
+        	printf("Obrigado por ultizar o sistema!\n");
+        	return 0;
+        	break;
+        	
+				
         	default:
         	printf("Essa opção não esta disponivel\n");     //mensagem para usuário    
 			system("pause");        // pausa a tela 
